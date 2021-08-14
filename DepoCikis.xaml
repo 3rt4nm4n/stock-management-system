@@ -1,0 +1,39 @@
+﻿<Window x:Class="DYSis.DepoCikis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DYSis"
+        mc:Ignorable="d"
+        Title="Canesis Depo Yönetim Sistemi" Height="300" Width="500" ResizeMode="NoResize" Icon="canesis.jpg">
+    <Grid>
+        <Label Content="Depo Çıkışı" HorizontalAlignment="Left" Margin="20,9,0,0" VerticalAlignment="Top" Width="650" FontWeight="Bold"/>
+        <Button x:Name="ADBut" Content="Azalt ve Devam et" HorizontalAlignment="Left" Margin="107,226,0,0" VerticalAlignment="Top" Width="112" Click="ADBut_Click"/>
+        <Button x:Name="AzBut" Content="Azalt" HorizontalAlignment="Left" Margin="220,226,0,0" VerticalAlignment="Top" Width="75" Click="AzBut_Click"/>
+        <Button x:Name="IBut" Content="İptal" HorizontalAlignment="Left" Margin="296,226,0,0" VerticalAlignment="Top" Width="75" Click="IBut_Click"/>
+        <Label Content="Tür" HorizontalAlignment="Left" Margin="20,43,0,0" VerticalAlignment="Top"/>
+        <Label Content="Malzeme Adı" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Barkod" HorizontalAlignment="Left" Margin="20,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Birim" HorizontalAlignment="Left" Margin="20,133,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adet" HorizontalAlignment="Left" Margin="20,163,0,0" VerticalAlignment="Top" />
+        <Label Content="Tedarikçi" HorizontalAlignment="Left" Margin="20,193,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="turcb" HorizontalAlignment="Left" Margin="143,43,0,0" VerticalAlignment="Top" Width="228" Height="23" IsEditable="True">
+
+
+        </ComboBox>
+        <TextBox x:Name="matb" HorizontalAlignment="Left" Height="23" Margin="143,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="143,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+        <ComboBox x:Name="bircb" HorizontalAlignment="Left" Margin="143,133,0,0" VerticalAlignment="Top" Width="228" Height="23" IsEditable="True">
+
+        </ComboBox>
+        <TextBox x:Name="atb" HorizontalAlignment="Left" Height="23" Margin="143,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" PreviewTextInput="atb_PreviewTextInput"/>
+        <TextBox x:Name="bartb" HorizontalAlignment="Left" Height="23" Margin="143,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" MaxLength="16" PreviewTextInput="bartb_PreviewTextInput" PreviewKeyDown="bartb_PreviewKeyDown"/>
+        <TextBox x:Name="ttb" HorizontalAlignment="Left" Height="23" Margin="143,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+        <Button x:Name="aramabutton" HorizontalAlignment="Left" Margin="389,103,0,0" VerticalAlignment="Top" Width="35" Height="23" Click="aramabutton_Click">
+            <StackPanel>
+                <Image Source="C:\Users\nigbu\source\repos\DYSis\searchicon.png" Width="30" Height="19" RenderTransformOrigin="0.496,0.509"/>
+
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="DYSis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DYSis"
+        mc:Ignorable="d"
+        Title="Canesis Depo Yönetim Sistemi" Height="400" Width="820" ResizeMode="NoResize" Icon="canesis.jpg">
+    <Grid>
+        
+        <Button x:Name="AButton" Content="Anasayfa" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="AButton_Click"/>
+        <Button x:Name="DYButton" Content="Depo Yönetimi" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="DYButton_Click"/>
+        <Button x:Name="EYButton" Content="Envanter Yönetimi" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="EYButton_Click"/>
+        <Label HorizontalAlignment="Left" Margin="307,40,0,0" VerticalAlignment="Top" Width="333" FontWeight="Bold">
+            <Image Height="53" Source="canesisicon.png" Stretch="Fill" Width="360"/>
+        </Label>
+        <DataGrid x:Name="dg" HorizontalAlignment="Left" Height="200" Margin="160,120,0,0" VerticalAlignment="Top" Width="616" ItemsSource="{Binding}">
+
+        </DataGrid>
+        <Image Margin="10,269,683.6,33.4" Source="canesis.jpg" Stretch="Fill"/>
+        <Button x:Name="notbut" Content="Bildiriminiz Yok" FontWeight="Bold" HorizontalAlignment="Left" Margin="186,57,0,0" VerticalAlignment="Top" Width="103" Height="35" Click="notbut_Click">
+            
+        </Button>
+
+
+    </Grid>
+</Window>

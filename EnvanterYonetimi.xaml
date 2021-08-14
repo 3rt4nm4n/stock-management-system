@@ -1,0 +1,31 @@
+﻿<Window x:Class="DYSis.EnvanterYonetimi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DYSis"
+        mc:Ignorable="d"
+        Title="Canesis Depo Yönetim Sistemi" Height="400" Width="820" Icon="canesis.jpg">
+    <Grid x:Name="bulBut">
+        <Button x:Name="AButton" Content="Anasayfa" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="AButton_Click"/>
+        <Button x:Name="DYButton" Content="Depo Yönetimi" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="DYButton_Click"/>
+        <Button x:Name="EYButton" Content="Envanter Yönetimi" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="EYButton_Click"/>
+        <Label Content="Envanter Yönetimi" HorizontalAlignment="Left" Margin="20,9,0,0" VerticalAlignment="Top" Width="650" FontWeight="Bold"/>
+        <Image Margin="10,286,683.6,22.4" Source="canesis.jpg" Stretch="Fill"/>
+        <Label Content="Ürün Bilgilerini Bul ve Güncelle/Sil" HorizontalAlignment="Left" Margin="160,40,0,0" VerticalAlignment="Top" Width="235" FontWeight="Bold"/>
+        <TextBox x:Name="barTxt" HorizontalAlignment="Left" Height="23" Margin="246,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Barkod" HorizontalAlignment="Left" Margin="160,66,0,0" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBox x:Name="adTxt" HorizontalAlignment="Left" Height="23" Margin="246,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Ürün Adı" HorizontalAlignment="Left" Margin="160,94,0,0" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBox x:Name="turTxt" HorizontalAlignment="Left" Height="23" Margin="246,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Ürün Türü" HorizontalAlignment="Left" Margin="160,122,0,0" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBox x:Name="birimTxt" HorizontalAlignment="Left" Height="23" Margin="246,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Ürün Birimi" HorizontalAlignment="Left" Margin="160,150,0,0" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBox x:Name="tedTxt" HorizontalAlignment="Left" Height="23" Margin="246,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Tedarikçi Adı" HorizontalAlignment="Left" Margin="160,178,0,0" VerticalAlignment="Top" Height="23" Width="86"/>
+        <Button x:Name="bulButon" Content="Bul" HorizontalAlignment="Left" Margin="160,217,0,0" VerticalAlignment="Top" Width="75" Click="bulButon_Click"/>
+        <Button x:Name="guncelleBut" Content="Güncelle" HorizontalAlignment="Left" Margin="240,217,0,0" VerticalAlignment="Top" Width="75" Click="guncelleBut_Click"/>
+        <Button x:Name="silBut" Content="Sil" HorizontalAlignment="Left" Margin="320,217,0,0" VerticalAlignment="Top" Width="75" Click="silBut_Click"/>
+
+    </Grid>
+</Window>
